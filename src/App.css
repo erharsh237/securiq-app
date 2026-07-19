@@ -1,0 +1,31 @@
+:root {
+  --bg-primary: #0a192f;
+  --bg-secondary: #112240;
+  --text-primary: #e6f1ff;
+  --text-muted: #8892b0;
+  --accent-color: #ff5722;
+  --accent-hover: #ff784e;
+  --border-color: #233554;
+}
+
+[data-theme='light'] {
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --text-primary: #111111;
+  --text-muted: #666666;
+  --accent-color: #ff5722;
+  --accent-hover: #ff784e;
+  --border-color: #e5e5e5;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.app {
+  min-height: 100vh;
+}
