@@ -1,0 +1,12 @@
+{
+  "name": "securiq-backend",
+  "version": "1.0.0",
+  "description": "Backend for SecurIQ App",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
