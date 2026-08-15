@@ -1,9 +1,43 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+
+# Environment Variables
 .env
 .env.local
-.vercel
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build Outputs
+dist/
+build/
+frontend/dist/
+backend/dist/
+
+# TypeScript
+*.tsbuildinfo
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
 *.log
+
+# Sensitive/generated files
 *.pem
 templates.md
 output.json
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
