@@ -16,6 +16,7 @@ import {
   CollectorError,
   CollectorResult,
   Provider,
+  Tags,
 } from "../config/types";
 
 interface SecurityGroupRules {
@@ -74,7 +75,7 @@ interface EC2RawData extends BaseRawData {
   };
   keyName?: string;
   launchTime?: Date;
-  tags?: { key?: string; value?: string }[];
+  tags?: Tags[];
   vpcId?: string;
   subnetId?: string;
   monitoring: { state: "disabled" | "disabling" | "enabled" | "pending" };

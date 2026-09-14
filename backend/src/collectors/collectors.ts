@@ -11,8 +11,9 @@ import { resolveAwsAccountId } from "../config/awsClient";
 
 export function initializeCollectors(region: string): Collector<unknown>[] {
   return [
-    new EC2Collector(region)
-];
+    new EC2Collector(region),
+    new IAMCollector(region),
+  ];
 }
 
 export async function runCollectors(
