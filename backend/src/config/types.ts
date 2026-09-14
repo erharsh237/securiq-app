@@ -42,3 +42,8 @@ export type CollectRun = {
 export interface BaseRawData {
     [key: string]: unknown;
 }
+
+export interface Tags {
+    key?: string,
+    value?: string
+}
